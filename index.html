@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platos Típicos del Valle del Cauca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Platos Típicos del Valle del Cauca</h1>
+    <img id="platoImagen" src="chuleta.jpg" alt="Plato típico">
+    <div>
+        <button onclick="clic1()">Sancocho</button>
+        <button onclick="clic2()">Arroz Atollado</button>
+        <button onclick="clic3()">chuleta</button>
+    </div>
+
+    <script>
+        function clic1() {
+            var img = document.getElementById("platoImagen");
+            img.src = "sancocho.jpg";   
+        
+        }
+        function clic2() {
+            var img = document.getElementById("platoImagen");
+            img.src = "arroz atollado.jpg";   
+        }
+
+        function clic3() {
+            var img = document.getElementById("platoImagen");
+            img.src = "chuleta.jpg";   
+        }
+
+    </script>
+</body>
+</html>
